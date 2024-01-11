@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 1;
+}
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+.upper {
+  background: url(../images/globe-2.jpg);
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 100vw;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: rgba(60, 145, 242, 0.398);
+  height: 60vh;
+  width: 100vw;
+}
+#info {
+  color: #fff;
+  font-weight: 300;
+}
+.wrapper button {
+  background-color: #895be6;
+  padding: 0.6vw;
+  border: none;
+  margin-right: 1vw;
+  text-transform: uppercase;
+  font-size: 1.5vh;
+  font-weight: 300;
+  height: 5vh;
+  color: #fff;
+  cursor: pointer;
+}
+.wrapper button:active{
+  transform: scale(0.95); /* Slightly shrink the button */
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.upper h1 {
+  text-transform: uppercase;
+  font-size: 4vw;
+  font-weight: 400;
+  color: #fff;
+}
+#countryName {
+  width: 33vw;
+  height: 5vh;
+  border-radius: 25px;
+  margin: 2vh 2vh;
+  padding: 2vh;
+  text-align: center;
+}
+/* Card Mechanism */
+.country-container {
+  margin: 0 5vw;
+  height: 40vh;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  row-gap: 20px;
+  place-items: center;
+}
+.clr-wrapper {
+  height: 20vh;
+  width: 22vh;
+  margin-top: 70px;
+  background-image: url(../images/map_image.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.country-card {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-color: rgba(60, 145, 242, 0.398);
+  justify-content: center;
+  align-items: center;
+  
+}
+.country-card h1{
+    color: #f20a5b;
+    font-weight: 400;
+    text-wrap: wrap;
+}
+
+.btns {
+  margin: 2vh 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image-container {
+  overflow: hidden;
+  z-index: -100;
+}
+.image-container img {
+  z-index: -100;
+  height: 90vh;
+  margin-top: -8vw;
+  width: 100vw;
+}
